@@ -1,50 +1,89 @@
-# React + TypeScript + Vite
+# Louise's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive software engineer portfolio built with React, TypeScript, and Tailwind CSS. Features a clean design, smooth animations, and dark mode support.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Optimized for all screen sizes
+- **Dark Mode**: Elegant light/dark theme switching
+- **Smooth Animations**: Using Framer Motion
+- **Modern UI**: Built with Tailwind CSS
+- **Type-Safe**: Written in TypeScript
+- **Performance Optimized**: Fast loading and smooth scrolling
+- **SEO Friendly**: Proper meta tags and semantic HTML
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend Framework**: React
+- **Type System**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Heroicons
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-- Configure the top-level `parserOptions` property like this:
+## 🏃‍♂️ Running Locally
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/louise-portfolio.git
+cd louise-portfolio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## 📂 Project Structure
+
+```
+louise-portfolio/
+├── src/
+│   ├── components/     # React components
+│   ├── assets/        # Static assets
+│   ├── App.tsx        # Main app component
+│   └── main.tsx       # Entry point
+├── public/            # Public assets
+├── index.html         # HTML template
+└── package.json       # Dependencies and scripts
+```
+
+## 🎨 Customization
+
+1. **Colors**: Edit `tailwind.config.js` to modify the color scheme
+2. **Content**: Update component files in `src/components/`
+3. **Styling**: Modify Tailwind classes in component files
+4. **Dark Mode**: Toggle implementation in `App.tsx`
+
+## 📱 Component Features
+
+- **Navbar**: Responsive navigation with smooth scrolling
+- **Hero**: Dynamic landing section with animations
+- **Experience**: Timeline of work history
+- **Skills**: Technical skills showcase
+- **Projects**: Portfolio of work
+- **Contact**: Contact form with validation
+
+## 📄 License
+
+MIT 
+
+## 🤝 Contact
+
+For inquiries or collaboration, reach out through:
+- Portfolio: [louise-portfolio.vercel.app](https://louise-portfolio.vercel.app)
+- LinkedIn: [Louise Villanueva](https://www.linkedin.com/in/louisevirtudazo/)
+- Email: louisevirtudazo@gmail.com
+
+Feel free to connect or reach out for potential collaborations!
