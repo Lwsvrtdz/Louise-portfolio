@@ -83,7 +83,7 @@ MIT
 
 For inquiries or collaboration, reach out through:
 - Portfolio: [louise-portfolio.vercel.app](https://louise-portfolio.vercel.app)
-- LinkedIn: [Louise Villanueva](https://www.linkedin.com/in/louisevirtudazo/)
+- LinkedIn: [Louise Virtudazo](https://www.linkedin.com/in/louisevirtudazo/)
 - Email: louisevirtudazo@gmail.com
 
 Feel free to connect or reach out for potential collaborations!
