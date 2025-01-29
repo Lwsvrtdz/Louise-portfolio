@@ -82,7 +82,7 @@ MIT
 ## 🤝 Contact
 
 For inquiries or collaboration, reach out through:
-- Portfolio: [louise-portfolio.vercel.app](https://louise-portfolio.vercel.app)
+- Portfolio: [lwsvrtdz-portfolio.netlify.app](https://lwsvrtdz-portfolio.netlify.app/)
 - LinkedIn: [Louise Virtudazo](https://www.linkedin.com/in/louisevirtudazo/)
 - Email: louisevirtudazo@gmail.com
 

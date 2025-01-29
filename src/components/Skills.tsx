@@ -2,22 +2,34 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 const skills = {
-  'Backend Development': [
-    'Python', 'Node.js', 'Java', 'Go',
-    'Django', 'FastAPI', 'Express', 'Spring Boot'
+  "Backend Development": [
+    "PHP",
+    "Laravel",
+    "Lumen",
+    "PHPUnit",
+    "Test Driven Development",
   ],
-  'Databases': [
-    'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch',
-    'MySQL', 'Cassandra'
+  "Frontend Development": [
+    "Vue.js",
+    "Vuex",
+    "Bootstrap Vue",
+    "Element UI",
+    "Single Page Applications",
   ],
-  'DevOps & Cloud': [
-    'Docker', 'Kubernetes', 'AWS', 'GCP',
-    'CI/CD', 'Terraform', 'Linux'
+  "DevOps & Tools": [
+    "Docker",
+    "Git",
+    "Microservices",
+    "cPanel",
+    "Azure",
+    "GCP",
   ],
-  'Tools & Others': [
-    'Git', 'REST APIs', 'GraphQL', 'gRPC',
-    'Message Queues', 'Microservices', 'System Design'
-  ],
+  "Databases & Search": [
+    "MySQL",
+    "Elasticsearch",
+    "API Development",
+    "Postman",
+  ]
 }
 
 export default function Skills() {
@@ -27,45 +39,39 @@ export default function Skills() {
   })
 
   return (
-    <section id="skills" className="bg-gray-50 dark:bg-gray-800">
-      <div className="section-container">
-        <motion.div
+    <section id="skills" className="bg-white dark:bg-slate-900">
+      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div
           ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Skills
-            <span className="text-primary">.</span>
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            Skills & Technologies
+            <span className="text-cyan-500">.</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {Object.entries(skills).map(([category, items], index) => (
-              <motion.div
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {Object.entries(skills).map(([category, items], categoryIndex) => (
+              <div
                 key={category}
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-900 rounded-lg shadow-sm p-6"
+                className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6 shadow-sm"
               >
-                <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">
                   {category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {items.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm"
+                      className="px-3 py-1.5 bg-gray-100 dark:bg-slate-700 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
